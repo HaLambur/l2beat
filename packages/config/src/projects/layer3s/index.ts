@@ -56,6 +56,7 @@ import { syndr } from './syndr'
 import { teva } from './teva'
 import { ungaii } from './ungaii'
 import { unite } from './unite'
+import { vessel } from './vessel'
 import { winr } from './winr'
 import { xai } from './xai'
 import { xrone } from './xrone'
@@ -113,6 +114,7 @@ export const layer3s: Layer3[] = [
   mvchain,
   mxc,
   unite,
+  vessel,
   l3x,
   lumiterra,
   oursong,
