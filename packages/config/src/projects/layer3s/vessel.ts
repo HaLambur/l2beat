@@ -1,8 +1,8 @@
-import { ProjectId, UnixTime } from '@l2beat/shared-pure'
+import { EthereumAddress, ProjectId, UnixTime } from '@l2beat/shared-pure'
 import type { Layer3 } from '../../types'
-import { upcomingL3 } from '../layer2s/templates/upcoming'
+import { underReviewL3 } from '../layer2s/templates/underReview'
 
-export const vessel: Layer3 = upcomingL3({
+export const vessel: Layer3 = underReviewL3({
   id: 'vessel',
   capability: 'universal',
   addedAt: new UnixTime(1739605172),
@@ -27,4 +27,12 @@ export const vessel: Layer3 = upcomingL3({
       ],
     },
   },
+  escrows: [
+    {
+      address: EthereumAddress('0x6126E927627b8d9eb9aDb9faadC47B76F94B6bA2'), // VaultProxy
+      sinceTimestamp: new UnixTime(1691045821),
+      tokens: '*',
+      chain: 'scroll',
+    },
+  ],
 })
